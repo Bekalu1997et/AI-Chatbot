@@ -1,5 +1,4 @@
-# 🤖 AI Chatbot — FastAPI + Streamlit + Phi-3 Mini (Ollama)
-
+# 🤖 AI Chatbot 
 A lightweight, end-to-end AI chatbot featuring **web search**, **PDF upload**, and **memory persistence** — powered by **Phi-3 Mini** through **Ollama**.  
 Built with **FastAPI** for the backend and **Streamlit** for the frontend. Fully containerized with **Docker** and orchestrated via **Docker Compose**.
 
