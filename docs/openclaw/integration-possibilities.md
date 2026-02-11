@@ -204,8 +204,39 @@ class CalculatorTool(Tool):
     }
     
     async def execute(self, expression: str) -> str:
+        """Execute mathematical expression safely"""
+        import ast
+        import operator
+        
+        # Define safe operations
+        safe_ops = {
+            ast.Add: operator.add,
+            ast.Sub: operator.sub,
+            ast.Mult: operator.mul,
+            ast.Div: operator.truediv,
+            ast.Pow: operator.pow,
+            ast.USub: operator.neg,
+        }
+        
+        def safe_eval(node):
+            if isinstance(node, ast.Num):
+                return node.n
+            elif isinstance(node, ast.BinOp):
+                op = safe_ops.get(type(node.op))
+                if op is None:
+                    raise ValueError(f"Unsupported operation: {type(node.op)}")
+                return op(safe_eval(node.left), safe_eval(node.right))
+            elif isinstance(node, ast.UnaryOp):
+                op = safe_ops.get(type(node.op))
+                if op is None:
+                    raise ValueError(f"Unsupported operation: {type(node.op)}")
+                return op(safe_eval(node.operand))
+            else:
+                raise ValueError(f"Unsupported expression: {type(node)}")
+        
         try:
-            result = eval(expression)  # Use safe_eval in production!
+            tree = ast.parse(expression, mode='eval')
+            result = safe_eval(tree.body)
             return f"Result: {result}"
         except Exception as e:
             return f"Error: {str(e)}"
