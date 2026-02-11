@@ -8,6 +8,7 @@ This directory contains comprehensive documentation about **OpenClaw**, a person
 2. **[Source Code Review](./source-code-review.md)** - Guide to navigating and understanding the OpenClaw codebase
 3. **[Components & Features](./components-features.md)** - Detailed breakdown of all major components and features
 4. **[Integration Guide](./integration-possibilities.md)** - How to integrate OpenClaw concepts with other projects
+5. **[Visual Study Guide](./visual-guide.md)** - Diagrams, flowcharts, and visual references
 
 ## 🦞 What is OpenClaw?
 
@@ -67,10 +68,11 @@ WhatsApp / Telegram / Slack / Discord / etc.
 
 ## 📖 How to Use This Documentation
 
-1. **For Architecture Study**: Start with [Architecture Overview](./architecture.md)
-2. **For Code Deep Dive**: Read [Source Code Review](./source-code-review.md)
-3. **For Feature Understanding**: Check [Components & Features](./components-features.md)
-4. **For Integration Ideas**: See [Integration Guide](./integration-possibilities.md)
+1. **For Quick Visual Overview**: Start with [Visual Study Guide](./visual-guide.md)
+2. **For Architecture Study**: Read [Architecture Overview](./architecture.md)
+3. **For Code Deep Dive**: Follow [Source Code Review](./source-code-review.md)
+4. **For Feature Understanding**: Check [Components & Features](./components-features.md)
+5. **For Integration Ideas**: See [Integration Guide](./integration-possibilities.md)
 
 ## 🎯 Key Takeaways for AI Chatbot Developers
 

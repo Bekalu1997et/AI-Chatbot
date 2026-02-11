@@ -92,6 +92,7 @@ OpenClaw is an open-source project that demonstrates:
 ### 📖 Available Documentation
 
 - **[Overview](./docs/openclaw/README.md)** - Introduction and quick reference
+- **[Visual Guide](./docs/openclaw/visual-guide.md)** - Diagrams and flowcharts (START HERE!)
 - **[Architecture](./docs/openclaw/architecture.md)** - Core architecture and design patterns
 - **[Source Code Review](./docs/openclaw/source-code-review.md)** - Guide to navigating the codebase
 - **[Components & Features](./docs/openclaw/components-features.md)** - Detailed feature breakdown
